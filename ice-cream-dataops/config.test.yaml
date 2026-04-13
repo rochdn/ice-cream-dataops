@@ -1,11 +1,9 @@
 environment:
-  name: test # prod, staging, dev, test, qa
-  project: cdf-bootcamp-55-test # ex. cdf-bootcamp-01-test
-  validation-type: test # prod, staging, dev, test, qa
+  name: test
+  project: cdf-bootcamp-55-test
+  validation-type: test
   selected:
-    - modules/bootcamp/data_foundation
-    - modules/bootcamp/ice_cream_api
-    - modules/bootcamp/use_cases/oee
+  - modules/
 
 variables:
   modules:
@@ -13,10 +11,6 @@ variables:
       # Variables shared by modules
       icapi_ds_external_id: ds_icapi
       icapi_space_name: icapi_dm_space
-
-      data_foundation:
-        data_developer_source_id: ${DATA_DEVELOPER_SOURCE_ID}
-
       ice_cream_api:
         icapi_extractors_source_id: ${ICAPI_EXTRACTORS_SOURCE_ID}
         tokenUri: ${IDP_TOKEN_URL}
